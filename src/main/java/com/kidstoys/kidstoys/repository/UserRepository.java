@@ -1,7 +1,5 @@
 package com.kidstoys.kidstoys.repository;
 
-import java.util.UUID;
-
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.kidstoys.kidstoys.domain.User;
