@@ -28,3 +28,6 @@ The following guides illustrate how to use some features concretely:
 
 1. docker exec -it <container-id> bash
 2. psql kids-db -U unicorn_user
+
+TODO:
+1. Find a way to use UUID as ids for entities
