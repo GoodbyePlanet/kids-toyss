@@ -1,0 +1,17 @@
+version: '3'
+services:
+  development-db:
+    container_name: development-db
+    restart: always
+    image: postgres:13
+    env_file:
+      - database.env
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./initialize-db.sql:/docker-entrypoint-initdb.d/initialize-db.sql
+volumes:
+  database-data:
+
+# - ./mariadb/init:/docker-entrypoint-initdb.d
+#       - database-data:/var/lib/postgresql/data/

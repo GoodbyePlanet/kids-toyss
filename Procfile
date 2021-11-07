@@ -1,0 +1,1 @@
+web: java -Dserver.port=$PORT -jar target/kids-toys-0.0.1-SNAPSHOT.jar --spring.datasource.url=${JDBC_DATABASE_URL}

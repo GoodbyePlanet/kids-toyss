@@ -1,0 +1,4 @@
+com/kidstoys/kidstoys/services/UserServiceTest.class
+com/kidstoys/kidstoys/controller/UserControllerTest.class
+com/kidstoys/kidstoys/RepositoryTestConfig.class
+com/kidstoys/kidstoys/repository/UserRepositoryTest.class
