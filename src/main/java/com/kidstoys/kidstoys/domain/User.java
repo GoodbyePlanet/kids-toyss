@@ -1,12 +1,12 @@
 package com.kidstoys.kidstoys.domain;
 
-import java.util.UUID;
-
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import org.hibernate.annotations.GenericGenerator;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -22,9 +22,9 @@ import lombok.NoArgsConstructor;
 public class User {
 
     @Id
-    @GeneratedValue
-    @Column(columnDefinition = "uuid", updatable = false)
-    private UUID id;
+    @GenericGenerator(name = "uuid2", strategy = "uuid2")
+    @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "uuid2")
+    private String id;
 
     private String name;
 
